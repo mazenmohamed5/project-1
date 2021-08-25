@@ -1,0 +1,77 @@
+#include<iostream>
+using namespace std;
+struct product
+{
+	string name;
+	int code, quantity;
+	float price;
+};
+
+void searchname(product x[])
+{
+	string namesearch;
+	cout << "enter the namesearch" << endl;
+	cin >> namesearch;
+	for (int i = 0; i < 3; i++)
+	{
+		if (x[i].name == namesearch)
+		{
+			cout << "the name search is found" << endl;
+			cout << "enter your name " << x[i].name << endl;
+			cout << "enter the code " << x[i].code << endl;;
+			cout << "enter the quantity " << x[i].quantity << endl;
+			cout << "enter the price " << x[i].price << endl;;
+		}
+	}
+}
+void searchcode(product y[])
+{
+	int searchcode;
+	cout << "enter the code" << endl;
+	cin >> searchcode;
+	for (int i = 0; i < 3; i++)
+	{
+		if (y[i].code == searchcode)
+		{
+			cout << "the  codesearch is found" << endl;
+			cout << "enter your name " << y[i].name << endl;
+			cout << "enter the code " << y[i].code << endl;
+			cout << "enter the quantity " << y[i].quantity << endl;
+			cout << "enter the price " << y[i].price << endl;
+		}
+	}
+}
+void main()
+{
+	int num;
+	const int size = 3;
+	product x[size];
+	cout << "please enter the array" << endl;
+	for (int i = 0; i < 3; i++)
+	{
+		cout << "please enter a name" << endl;
+		cin >> x[i].name;
+		cout << "please enter the code" << endl;
+		cin >> x[i].code;
+		cout << "please enter the quantity" << endl;
+		cin >> x[i].quantity;
+		cout << "please enter the price" << endl;
+		cin >> x[i].price;
+	}
+	cout << " for name search choose 1 " << endl;
+	cout << " for code search choose 2 " << endl;
+	cin >> num;
+	switch (num)
+	{
+
+	 case 1:
+		{
+			searchname(x);
+		}
+		break;
+	 case 2:
+		{
+			searchcode(x);
+		}
+	}
+}
