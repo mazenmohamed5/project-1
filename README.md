@@ -1,2 +1,4 @@
-# project-1
-the project is written bu c++ and it talks about products that have a name , code , quantity and a price , it's about that the user can search about the products by it's name or code with it's price when there is a discount or not , there is an option for the owner to know the profits and total profits ,  the project contains (struct , functions , loobs ,  , switch cases , arrays ,......) , the project is capable of developing (update) everyday.
+# Description
+
+This C++ project manages a product inventory with details such as name, code, quantity, and price. Users can search for products by name or code and view their prices, including any discounts. 
+The owner can also track individual and total profits. The project utilizes structs, functions, loops, switch cases, and arrays. It is designed for daily updates and enhancements.
